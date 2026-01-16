@@ -66,3 +66,13 @@
     margin-right: 15px;
     min-width: 28px;
 }
+
+@media (max-width : 768px) {
+
+    .title {
+        font-size: 2rem;
+
+    }
+
+
+}

@@ -77,3 +77,14 @@
 .listIcon {
     color: var(--brand-accent);
 }
+
+
+@media (max-width : 768px) {
+
+    .box {
+        height: auto;
+
+    }
+
+
+}

@@ -41,7 +41,9 @@ const Navbar = () => {
             <li className="nav-item">
               <Link
                 href="/"
-                className={`nav-link ${styles.navLink} ${isActive('/') ? styles.active : ''}`}
+                className={`nav-link ${styles.navLink} ${
+                  isActive("/") ? styles.active : ""
+                }`}
               >
                 Home
               </Link>
@@ -49,7 +51,9 @@ const Navbar = () => {
             <li className="nav-item">
               <Link
                 href="/why-pur-food"
-                className={`nav-link ${styles.navLink} ${isActive('/why-pur-food') ? styles.active : ''}`}
+                className={`nav-link ${styles.navLink} ${
+                  isActive("/why-pur-food") ? styles.active : ""
+                }`}
               >
                 Why PurFood
               </Link>
@@ -57,7 +61,9 @@ const Navbar = () => {
             <li className="nav-item">
               <Link
                 href="/services"
-                className={`nav-link ${styles.navLink} ${isActive('/services') ? styles.active : ''}`}
+                className={`nav-link ${styles.navLink} ${
+                  isActive("/services") ? styles.active : ""
+                }`}
               >
                 Services
               </Link>
@@ -65,7 +71,9 @@ const Navbar = () => {
             <li className="nav-item">
               <Link
                 href="/contact"
-                className={`nav-link ${styles.navLink} ${isActive('/contact') ? styles.active : ''}`}
+                className={`nav-link ${styles.navLink} ${
+                  isActive("/contact") ? styles.active : ""
+                }`}
               >
                 Contact
               </Link>

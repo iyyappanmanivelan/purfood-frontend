@@ -9,7 +9,7 @@ const HeroBanner = () => {
       <div className="container">
         <div className="row align-items-center">
           {/* Left Column: Content */}
-          <div className="col-lg-6 order-2 order-lg-1">
+          <div className="col-lg-6">
             <div className={styles.contentWrapper}>
               <span className={styles.tagline}>
                 Pleasantly Unifying & Revolutionizing Food
@@ -52,7 +52,7 @@ const HeroBanner = () => {
           </div>
 
           {/* Right Column: Image */}
-          <div className="col-lg-6 order-1 order-lg-2 mb-5 mb-lg-0">
+          <div className="col-lg-6 mb-5 mb-lg-0">
             <div className={styles.imageWrapper}>
               <div className={styles.blobBackground}></div>
               <Image
