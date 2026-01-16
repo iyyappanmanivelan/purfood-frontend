@@ -74,3 +74,14 @@
     color: #fff;
     transform: translateY(-2px);
 }
+
+
+@media (max-width : 768px) {
+
+    .navLink {
+        margin: 8px 15px;
+
+    }
+
+
+}
