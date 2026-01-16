@@ -1,0 +1,66 @@
+.whoSection {
+    padding: 80px 0;
+    background-color: var(--secondary-neutral);
+    font-family: var(--font-primary);
+}
+
+.heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.underline {
+    width: 60px;
+    height: 4px;
+    background-color: var(--brand-accent);
+    margin-bottom: 25px;
+    border-radius: 2px;
+}
+
+.subText {
+    font-size: 1.1rem;
+    color: var(--text-grey);
+    font-family: var(--font-secondary);
+    line-height: 1.6;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(46, 125, 50, 0.1);
+}
+
+.iconWrapper {
+    color: var(--brand-accent);
+    background: #f0fdf4;
+    padding: 12px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.cardText {
+    margin: 0;
+    font-weight: 500;
+    color: var(--primary-color);
+    font-size: 1rem;
+    line-height: 1.4;
+    font-family: var(--font-secondary);
+}

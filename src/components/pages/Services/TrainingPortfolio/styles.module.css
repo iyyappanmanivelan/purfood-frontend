@@ -1,0 +1,64 @@
+.section {
+    padding: 100px 0;
+    background-color: #fff;
+    font-family: var(--font-primary);
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.underline {
+    width: 80px;
+    height: 4px;
+    background-color: var(--brand-accent);
+    margin: 0 auto;
+    border-radius: 2px;
+}
+
+.card {
+    background: var(--secondary-neutral);
+    padding: 25px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    background: #fff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.iconBox {
+    background: #fff;
+    color: var(--brand-accent);
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.cardTitle {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin: 0;
+}
+
+.cardSub {
+    font-size: 0.9rem;
+    color: var(--text-grey);
+    margin: 5px 0 0;
+    font-family: var(--font-secondary);
+}

@@ -1,0 +1,171 @@
+.partnerSection {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.sectionTitle {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    font-family: var(--font-primary);
+}
+
+.underline {
+    width: 60px;
+    height: 4px;
+    background-color: var(--brand-accent);
+    margin-bottom: 30px;
+    border-radius: 2px;
+}
+
+.partnerInfo {
+    padding: 40px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.partnerList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.partnerList li {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 25px;
+    font-size: 1.1rem;
+    color: var(--text-grey);
+    font-family: var(--font-secondary);
+    line-height: 1.6;
+}
+
+.partnerList li:last-child {
+    margin-bottom: 0;
+}
+
+.icon {
+    color: var(--brand-accent);
+    margin-top: 3px;
+    min-width: 24px;
+}
+
+/* Thank You Section */
+.thankYouSection {
+    padding: 100px 0;
+    background: linear-gradient(135deg, var(--brand-accent) 0%, #1a5e20 100%);
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.thankYouSection::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    width: 300px;
+    height: 300px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 50%;
+}
+
+.thankYouTitle {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    font-family: var(--font-primary);
+}
+
+.contactMessage {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: var(--font-secondary);
+}
+
+.supportMessage {
+    font-size: 1.15rem;
+    margin-bottom: 50px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: var(--font-secondary);
+    font-style: italic;
+    opacity: 0.95;
+}
+
+.contactCard {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.contactCard h3 {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.director {
+    font-size: 1.3rem;
+    margin-bottom: 25px;
+    font-weight: 500;
+}
+
+.phoneBox {
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 1.5rem;
+    transition: 0.3s;
+}
+
+.phoneBox:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.05);
+}
+
+.phoneBox a {
+    text-decoration: none;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .sectionTitle {
+        font-size: 2rem;
+    }
+
+    .thankYouTitle {
+        font-size: 2.2rem;
+    }
+
+    .contactMessage {
+        font-size: 1.1rem;
+    }
+
+    .supportMessage {
+        font-size: 1rem;
+    }
+
+    .partnerInfo {
+        padding: 25px;
+    }
+
+    .contactCard {
+        padding: 30px 20px;
+    }
+}

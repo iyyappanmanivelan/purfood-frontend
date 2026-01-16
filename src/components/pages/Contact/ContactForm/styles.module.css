@@ -1,0 +1,248 @@
+.formContainer {
+    background: #fff;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.form {
+    width: 100%;
+}
+
+.formGroup {
+    margin-bottom: 10px;
+}
+
+.label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    font-family: var(--font-primary);
+}
+
+.input {
+    width: 100%;
+    padding: 14px 18px;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-family: var(--font-secondary);
+    transition: all 0.3s ease;
+    background: #f8f9fa;
+}
+
+.input:focus {
+    outline: none;
+    border-color: var(--brand-accent);
+    background: #fff;
+    box-shadow: 0 0 0 3px rgba(46, 125, 50, 0.1);
+}
+
+.input::placeholder {
+    color: #999;
+}
+
+.textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.inputError {
+    border-color: #ef4444;
+    background: #fef2f2;
+}
+
+.error {
+    color: #ef4444;
+    font-size: 0.875rem;
+    margin-top: 6px;
+    font-family: var(--font-secondary);
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.error::before {
+    content: '⚠';
+}
+
+.submitBtn {
+    width: 100%;
+    padding: 16px 32px;
+    background: var(--brand-accent);
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    font-family: var(--font-primary);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    box-shadow: 0 4px 15px rgba(46, 125, 50, 0.3);
+}
+
+.submitBtn:hover {
+    background: #1a5e20;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(46, 125, 50, 0.4);
+}
+
+.submitBtn:active {
+    transform: translateY(0);
+}
+
+.submitBtn:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+/* Modal Styles */
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.modal {
+    background: #fff;
+    border-radius: 20px;
+    max-width: 500px;
+    width: 90%;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    animation: slideUp 0.3s ease;
+    overflow: hidden;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.modalHeader {
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.successHeader {
+    background: linear-gradient(135deg, var(--brand-accent) 0%, #1a5e20 100%);
+}
+
+.errorHeader {
+    background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+}
+
+.modalBody {
+    padding: 30px 40px;
+    text-align: center;
+}
+
+.modalBody h3 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    font-family: var(--font-primary);
+}
+
+.modalBody p {
+    font-size: 1rem;
+    color: var(--text-grey);
+    line-height: 1.6;
+    font-family: var(--font-secondary);
+}
+
+.modalFooter {
+    padding: 20px 40px 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.modalBtn {
+    padding: 12px 40px;
+    background: var(--brand-accent);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: var(--font-primary);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.modalBtn:hover {
+    background: #1a5e20;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(46, 125, 50, 0.3);
+}
+
+@media (max-width: 768px) {
+    .formContainer {
+        padding: 30px 20px;
+    }
+
+    .label {
+        font-size: 0.95rem;
+    }
+
+    .input {
+        padding: 12px 15px;
+        font-size: 0.95rem;
+    }
+
+    .modal {
+        width: 95%;
+    }
+
+    .modalHeader {
+        padding: 30px;
+    }
+
+    .modalBody {
+        padding: 20px 25px;
+    }
+
+    .modalBody h3 {
+        font-size: 1.5rem;
+    }
+}

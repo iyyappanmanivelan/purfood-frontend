@@ -1,0 +1,63 @@
+.challengesSection {
+    padding: 100px 0;
+    background-color: #fff;
+    font-family: var(--font-primary);
+}
+
+.sectionTitle {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.titleUnderline {
+    width: 80px;
+    height: 4px;
+    background-color: #ef4444;
+    /* Warning Red */
+    margin: 0 auto;
+    border-radius: 2px;
+}
+
+.challengeCard {
+    background: #fffafa;
+    /* Very light red tint */
+    padding: 40px 30px;
+    border-radius: 20px;
+    text-align: center;
+    border: 1px solid rgba(239, 68, 68, 0.1);
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.challengeCard:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(239, 68, 68, 0.1);
+    border-color: rgba(239, 68, 68, 0.3);
+}
+
+.iconBox {
+    width: 70px;
+    height: 70px;
+    background: #fef2f2;
+    color: #ef4444;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 25px;
+}
+
+.cardTitle {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.cardDesc {
+    color: var(--text-grey);
+    font-family: var(--font-secondary);
+    line-height: 1.6;
+}

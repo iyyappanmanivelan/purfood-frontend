@@ -1,0 +1,228 @@
+.footer {
+    background: linear-gradient(135deg, var(--primary-color) 0%, #1a1a1a 100%);
+    color: #fff;
+    padding: 80px 0 0;
+    font-family: var(--font-primary);
+    position: relative;
+    overflow: hidden;
+}
+
+.footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.02'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    pointer-events: none;
+}
+
+.footerSection {
+    position: relative;
+    z-index: 1;
+}
+
+.brandSection {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.logo {
+    border-radius: 10px;
+}
+
+.brandSection h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 0;
+    color: var(--brand-accent);
+}
+
+.tagline {
+    font-size: 1rem;
+    font-style: italic;
+    color: #ddd;
+    margin-bottom: 15px;
+    font-family: var(--font-secondary);
+}
+
+.description {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #ccc;
+    margin-bottom: 25px;
+    font-family: var(--font-secondary);
+}
+
+.socialLinks {
+    display: flex;
+    gap: 15px;
+}
+
+.socialLinks a {
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.socialLinks a:hover {
+    background: var(--brand-accent);
+    border-color: var(--brand-accent);
+    transform: translateY(-3px);
+}
+
+.footerSection h4 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: var(--brand-accent);
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.footerSection h4::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 3px;
+    background: var(--brand-accent);
+    border-radius: 2px;
+}
+
+.linkList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.linkList li {
+    margin-bottom: 12px;
+}
+
+.linkList a {
+    color: #ccc;
+    text-decoration: none;
+    font-family: var(--font-secondary);
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.linkList a:hover {
+    color: var(--brand-accent);
+    transform: translateX(5px);
+}
+
+.contactList {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 25px 0;
+}
+
+.contactList li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 15px;
+    color: #ccc;
+    font-family: var(--font-secondary);
+}
+
+.contactList svg {
+    color: var(--brand-accent);
+    margin-top: 2px;
+    min-width: 18px;
+}
+
+.contactList a {
+    color: #ccc;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.contactList a:hover {
+    color: var(--brand-accent);
+}
+
+.certifications {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 15px;
+    border-radius: 10px;
+    border-left: 3px solid var(--brand-accent);
+}
+
+.certifications p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #ddd;
+}
+
+.certifications p:first-child {
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.bottomBar {
+    margin-top: 60px;
+    padding: 25px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.copyright {
+    margin: 0;
+    color: #999;
+    font-size: 0.9rem;
+    font-family: var(--font-secondary);
+}
+
+.bottomLinks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    font-size: 0.9rem;
+}
+
+.bottomLinks a {
+    color: #999;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.bottomLinks a:hover {
+    color: var(--brand-accent);
+}
+
+.bottomLinks span {
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 60px 0 0;
+    }
+
+    .brandSection h3 {
+        font-size: 1.5rem;
+    }
+
+    .bottomLinks {
+        justify-content: center;
+        margin-top: 15px;
+    }
+
+    .copyright {
+        text-align: center;
+    }
+}
